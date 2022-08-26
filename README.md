@@ -16,35 +16,35 @@ aws configure # then file in the fields
 OR export the credentials:
 
 <code>
-export AWS_ACCESS_KEY_ID="<your_access_key_id>"
-export AWS_SECRET_ACCESS_KEY="<your_secret_access_key>"
+$ export AWS_ACCESS_KEY_ID="<your_access_key_id>"
+$ export AWS_SECRET_ACCESS_KEY="<your_secret_access_key>"
 </code>
 
 Then, enter those commands to deploy your infrastructure:
 
 # to initialize the terraform root folder
 <code>
-terraform init
+$ terraform init
 </code>
 
 # optional
 <code>
-terraform fmt
+$ terraform fmt
 </code>
 
 # optional
 <code>
-terraform validate
+$ terraform validate
 </code>
 
 # to see what is expected to be deployed and how it will potentially be applied
 <code>
-terrafrom plan
+$ terrafrom plan
 </code>
 
 # you will be promted with Y/N choice, say "y" , optionally for automatisation you have the option "--auto-approve" available to valide the prompt (Y/N choice).
 <code>
-terraform apply
+$ terraform apply
 </code>
 
 After than you can go to your AWS console and see the instance running. Terraform will output the public IP of your instance.
