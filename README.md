@@ -15,20 +15,37 @@ aws configure # then file in the fields
 
 OR export the credentials:
 
+<code>
 export AWS_ACCESS_KEY_ID="<your_access_key_id>"
 export AWS_SECRET_ACCESS_KEY="<your_secret_access_key>"
+</code>
 
 Then, enter those commands to deploy your infrastructure:
 
-terraform init # to initialize the terraform root folder
+# to initialize the terraform root folder
+<code>
+terraform init
+</code>
 
-terraform fmt # optional
+# optional
+<code>
+terraform fmt
+</code>
 
-terraform validate # optional
+# optional
+<code>
+terraform validate
+</code>
 
-terrafrom plan # to see what is expected to be deployed and how it will potentially be applied
+# to see what is expected to be deployed and how it will potentially be applied
+<code>
+terrafrom plan
+</code>
 
-terraform apply # you will be promted with Y/N choice, say "y" , optionally for automatisation you have the option "--auto-approve" available to valide the prompt (Y/N choice).
+# you will be promted with Y/N choice, say "y" , optionally for automatisation you have the option "--auto-approve" available to valide the prompt (Y/N choice).
+<code>
+terraform apply
+</code>
 
 After than you can go to your AWS console and see the instance running. Terraform will output the public IP of your instance.
 Put the public in your browser to see the apache server running your page with your message.

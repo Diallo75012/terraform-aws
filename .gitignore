@@ -40,3 +40,4 @@ terraform.*
 awscliv2.zip
 aws*
 **/aws/*
+aws
