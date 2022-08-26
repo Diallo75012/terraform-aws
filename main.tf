@@ -59,7 +59,7 @@ resource "aws_instance" "app_server" {
   apt update -y
   apt install apache2 -y
   service apache2 start
-  echo "<html><head><title>M2iTerraform</title></head><body><h1>Hello Serval et Diallo</h1><.body></html>" > /var/www/html/index.html
+  echo "<html><head><title>Apache2 Server Terraform Message Page</title></head><body><h1>My message to say that the Terraform deployment was a success. Apache2 server is running my custom html page</h1></body></html>" > /var/www/html/index.html
   EOF
 
     connection {
